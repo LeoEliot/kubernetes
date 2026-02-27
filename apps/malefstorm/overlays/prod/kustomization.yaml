@@ -3,8 +3,7 @@ kind: Kustomization
 resources:
 - ../../base
 
-namePrefix: dev-
-namespace: dev
+namespace: prod
 
 # Use a patch to change the number of replicas
 patches:
@@ -27,5 +26,5 @@ patches:
     name: nginx-ingress
 
 images:
-  - name: registry.malefstorm.ru/nginx
-    newTag: latest
+  - name: registry.malefstorm.ru/malefstudio/landing
+    newTag: v0.1.0

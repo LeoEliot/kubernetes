@@ -27,5 +27,5 @@ patches:
     name: nginx-ingress
 
 images:
-  - name: registry.malefstorm.ru/nginx
-    newTag: v1.0
+  - name: registry.malefstorm.ru/malefstudio/landing:latest
+    newTag: latest

@@ -3,3 +3,4 @@ kind: Kustomization
 
 resources:
   - overlays/dev/kustomization.yaml
+  - overlays/prod/kustomization.yaml
