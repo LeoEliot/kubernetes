@@ -18,8 +18,8 @@ spec:
       imagePullSecrets:
       - name: registry-creds
       containers:
-      - image: registry.malefstorm.ru/nginx:latest
-        name: nginx
+      - image: egistry.malefstorm.ru/malefstudio/landing:latest
+        name: landing
         
         ports:
         - containerPort: 80
