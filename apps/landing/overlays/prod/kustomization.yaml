@@ -6,4 +6,4 @@ resources:
 
 images:
   - name: registry.malefstorm.ru/malefstudio/landing
-    newTag: 53f6904
+    newTag: 77f34f3
