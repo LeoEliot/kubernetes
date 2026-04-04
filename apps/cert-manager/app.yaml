@@ -11,6 +11,8 @@ spec:
     repoURL: https://github.com/LeoEliot/kubernetes
     path: apps/cert-manager/manifests
     targetRevision: HEAD
+    helm:
+      releaseName: cert-manager
   destination:
     server: https://kubernetes.default.svc
     namespace: cert-manager
