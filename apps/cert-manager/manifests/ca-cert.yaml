@@ -4,9 +4,9 @@ metadata:
   name: ca-cert
   annotations:
     argocd.argoproj.io/sync-wave: "1"
-type: kubernetes.io/tls
+type: Opaquie
 stringData:
-  tls.crt: |
+  ca.crt: |
     -----BEGIN CERTIFICATE-----
     MIIDFDCCAfygAwIBAgIUHm6AnfEEYQdZWcDezLnycNcrK4owDQYJKoZIhvcNAQEL
     BQAwIjEgMB4GA1UEAxMXTWFsZWZTdG9ybSBJbmMuIFJvb3QgQ0EwHhcNMjYwNDA0
@@ -26,7 +26,6 @@ stringData:
     yoXUgSLGPi0BKsmomSGfjmxKCnIqQPfYKEiPmh9KtAf9ZmS8kXD8+krsXlNEKO9a
     QIkfDBqFjDr9GNDYw3Qtoc1Z8d/sJMk0
     -----END CERTIFICATE-----
-  tls.key: |
     -----BEGIN RSA PRIVATE KEY-----
     MIIEowIBAAKCAQEAxy0WV7AAE3ZuIW7ACFCUnmCJWsRoAK4rBxdnk8QDXajxJkiK
     F1HkwDKOiOyiFBgeSNs8utfj6XWViimNeV9p0SGSu26sgipfTJ8rLCHYfoSE2Sub
