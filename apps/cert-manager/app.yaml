@@ -8,14 +8,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://charts.jetstack.io
-    chart: cert-manager
-    targetRevision: v1.20.1 # Use a specific version
-    helm:
-      releaseName: cert-manager
-      values: |
-        crds:
-          enabled: true
+    repoURL: https://github.com/LeoEliot/kubernetes
+    path: apps/cert-manager/manifets
+    targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
     namespace: cert-manager
