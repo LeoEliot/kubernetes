@@ -12,8 +12,9 @@ spec:
     namespace: metallb-system
   source:
     chart: metallb
-    repoURL: https://github.com/LeoEliot/kubernetes/apps/metallb/manifests
-    targetRevision: 0.1.0
+    repoURL: https://github.com/LeoEliot/kubernetes
+    targetRevision: HEAD
+    path: apps/metallb/manifests/
     helm:
       releaseName: metallb
   syncPolicy:
