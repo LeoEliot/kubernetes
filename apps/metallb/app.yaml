@@ -11,9 +11,9 @@ spec:
     server: "https://kubernetes.default.svc"
     namespace: metallb-system
   source:
-    repoURL: https://github.com/LeoEliot/kubernetes
-    targetRevision: HEAD
-    path: apps/metallb/manifests/
+    chart: metallb
+    repoURL: https://github.com/LeoEliot/kubernetes/apps/metallb/manifests
+    targetRevision: 0.1.0
     helm:
       releaseName: metallb
   syncPolicy:
