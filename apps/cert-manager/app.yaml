@@ -22,4 +22,5 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-      - ServerSideApply=true # Required as cert-manager CRDs are large
+      - ServerSideApply=true 
+      - SkipDryRunOnMissingResource=true # Required as cert-manager CRDs are large
