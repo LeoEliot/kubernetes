@@ -4,18 +4,18 @@ metadata:
   name: kyverno
   namespace: argocd
   annotations:
-    argocd.argoproj.io/compare-options: ServerSideDiff=true,IncludeMutationWebhook=true
+    argocd.argoproj.io/sync-wave: "-6"
 spec:
   project: default
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: kyverno
+    namespace: metallb-system
   source:
-    chart: kyverno
-    repoURL: https://kyverno.github.io/kyverno/
-    targetRevision: 3.7.1
+    repoURL: https://github.com/LeoEliot/kubernetes
+    targetRevision: HEAD
+    path: apps/metallb/manifests
     helm:
-      releaseName: kyverno
+      releaseName: metallb
   syncPolicy:
     automated:
       prune: true
