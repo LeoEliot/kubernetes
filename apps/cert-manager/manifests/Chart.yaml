@@ -1,4 +1,4 @@
-appVersion: v2
+apiVersion: v2
 name: cert-manager
 description: Cert Manager Chart
 version: 0.1.0
