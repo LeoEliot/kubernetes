@@ -19,5 +19,12 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-      - CreateNamespace=true
-      - ServerSideApply=true
+    - CreateNamespace=true
+    - ServerSideApply=true # Recommended to handle webhooks
+    - ApplyOutOfSyncOnly=true # Reduce API pressure
+  ignoreDifferences: # Use if specific fields keep changing
+  - group: kyverno.io
+    kind: ClusterPolicy
+    jsonPointers:
+    - /spec/rules/0/exclude
+    - /spec/rules/0/mutate
