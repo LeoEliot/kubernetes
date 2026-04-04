@@ -14,7 +14,7 @@ spec:
     chart: ingress-nginx
     helm:
       releaseName: ingress-nginx
-  syncPolicies:
+  syncPolicy:
     automated:
       prune: true
       selfHeal: true
