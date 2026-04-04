@@ -12,9 +12,6 @@ spec:
     - repoURL: https://github.com/LeoEliot/kubernetes
       targetRevision: HEAD
       path: apps/
-      directory:
-        recurse: true
-        include: '**/app.yaml'
   syncPolicy:
     automated:
       prune: true
