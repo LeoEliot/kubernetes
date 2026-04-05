@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/LeoEliot/kubernetes
     targetRevision: HEAD
-    path: manifets/metallb/
+    path: manifests/metallb/
   syncPolicy:
     automated:
       prune: true
