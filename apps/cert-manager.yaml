@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/LeoEliot/kubernetes
-    path: apps/cert-manager/manifests
+    path: manifests/cert-manager/
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
