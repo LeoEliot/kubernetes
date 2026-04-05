@@ -10,10 +10,8 @@ spec:
     namespace: monitoring
   source:
     repoURL: https://github.com/LeoEliot/kubernetes
-    path: apps/kube-prometheus-stack/manifests
+    path: manifests/kube-prometheus-stack/
     targetRevision: HEAD
-    helm:
-      releaseName: prometheus
   syncPolicy:
     automated:
       prune: true
