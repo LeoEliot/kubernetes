@@ -3,3 +3,5 @@ kind: Kustomization
 resources:
   - ./cert-manager/ca-cert.yaml
   - ./cert-manager/cluster-issuer.yaml
+  - ./metallb/ippool.yaml
+  - ./metallb/l2adver.yaml

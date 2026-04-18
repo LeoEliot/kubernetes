@@ -1,0 +1,9 @@
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: metallb-default
+  namespace: metallb-system
+spec:
+  addresses:
+  - 192.168.1.15-192.168.1.30
+  autoAssign: true
