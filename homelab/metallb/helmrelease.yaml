@@ -10,7 +10,7 @@ spec:
       chart: "metallb"
       version: "0.15.3"
       sourceRef:
-        name: jetstack
+        name: metallb
         kind: HelmRepository
         namespace: flux-system
   install:
