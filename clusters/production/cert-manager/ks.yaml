@@ -1,0 +1,20 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: cert-manager
+  namespace: cert-manager
+spec:
+  commonMetadata:
+    labels:
+      app.kubernetes.io/name: cert-manager
+  interval: 30m
+  path: ./clusters/production/cert-manager/app
+  prune: true
+  retryInterval: 1m
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+    namespace: flux-system
+  targetNamespace: cert-manager
+  timeout: 5m
+  wait: false
