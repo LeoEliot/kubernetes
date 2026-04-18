@@ -4,7 +4,7 @@ metadata:
   name: cert-manager
 spec:
   interval: 1h
-  path: ./kubernetes/apps/cert-manager/cert-manager/app
+  path: ./clusters/production/cert-manager/app
   prune: true
   retryInterval: 2m
   sourceRef:
