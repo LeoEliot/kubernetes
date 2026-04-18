@@ -21,7 +21,7 @@ spec:
   dependsOn:
     - name: infra-contollers
   interval: 10m0s
-  path: ./infrastructure/controllers
+  path: ./infrastructure/configs
   prune: true
   sourceRef:
     kind: GitRepository
